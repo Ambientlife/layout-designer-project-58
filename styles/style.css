@@ -243,11 +243,137 @@ h3 {
     font-size: 34px;
 }
 
+.hero {
+    background: var(--color-light);
+    opacity: .9;
+}
+
+.bg {
+    position: relative;
+}
+
+.bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.06;
+
+}
+
 .container {
     max-width: 1110px;
-    width: 100%;
     margin: 0 auto;
     padding: 100px 0;
+
+}
+
+.header__title {
+    margin-top: 100px;
+    max-width: 600px;
+
+}
+
+
+.header__title span {
+    color: var(--primary);
+}
+
+.hero__content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.hero__image {
+    position: absolute;
+    height: 525px;
+    top: 55px;
+    right: -270px;
+    z-index: -1;
+}
+
+.hero__text {
+    display: flex;
+    margin-top: 185px;
+    gap: 30px;
+}
+
+.flex-basis {
+    flex-basis: 50%;
+}
+
+.flex-basis-2 {
+    flex-basis: 50%;
+}
+
+.header__btn {
+    width: 148px;
+    height: 49px;
+    padding: 11px 24px;
+    background-color: var(--primary);
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+/* Видео-секция */
+.video-section {
+    margin-top: 100px;
+
+
+}
+
+.video-section__description {
+    margin: 0 auto;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.video-section__title {
+    font-weight: 400;
+    line-height: 72px;
+    text-align: center;
+    vertical-align: bottom;
+    margin-bottom: 30px;
+}
+
+.video-section__title span {
+    color: var(--primary);
+
+}
+
+.video-section__description p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.video-section__player {
+    margin: 0 auto;
+    width: 919px;
+    height: 517px;
+    position: relative;
+    margin-top: -200px;
+
+}
+
+.video-section__image {
+    position: absolute;
+    filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -200px;
+
+}
+
+.navigation-section {
+    background-color: var(--primary-dark);
+    height: 1091px;
+  
 }
 
 /**
