@@ -316,14 +316,16 @@ h3 {
 }
 
 .header__btn {
-    width: 148px;
-    height: 49px;
+    display: inline-block;
     padding: 11px 24px;
     background-color: var(--primary);
     text-decoration: none;
     color: var(--color-white);
     font-weight: bold;
     transition: all 0.3s ease;
+    cursor: pointer;
+    z-index: 10;
+   
 }
 
 .header__btn:hover {
