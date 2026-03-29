@@ -153,8 +153,7 @@ h3 {
 
 .hero__content {
     display: flex;
-    justify-content: space-between;
-
+   
 }
 
 
@@ -169,15 +168,13 @@ h3 {
 
 .hero__text {
     display: flex;
-    margin-top: 200px;
+    margin-top: 205px;
     gap: 30px;
 }
 
 
 .flex-basis {
-   flex-basis: 50%;
-   flex-grow: 1;
-   flex-shrink: 1;
+ flex: 1;
    
 }
 
@@ -192,7 +189,7 @@ h3 {
     font-weight: bold;
     transition: all 0.3s ease;
     cursor: pointer;
-    z-index: 2;
+    
     border: none;
 }
 
@@ -327,7 +324,7 @@ h3 {
     color: var(--dark);
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.6em;
     margin: 0;
     transition: color 0.3s ease;
     flex-grow: 1;
@@ -342,22 +339,18 @@ h3 {
 
 /* Секция IKEA */
 
+.ikea-effect {
+    margin-top: -3px;
+}
 
 .ikea-effect__row {
     display: flex;
     gap: 30px;
-    align-items: flex-start;
     
 }
 
-.ikea-effect__subtitle {
-    display: block;
-    margin-bottom: 5px;
-}
-
 .ikea-effect__title {
-    margin-top: 0;
-    line-height: 1;
+   color: var(--dark);
 }
 
 .ikea-effect__image img {
@@ -367,7 +360,6 @@ h3 {
 }
 
 .ikea-effect__info {
-    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -385,10 +377,8 @@ h3 {
 .ikea-effect__text {
     font-family: "Neucha",cursive;
     font-weight: 400;
-    
     font-size: 34px;
     line-height: 40px;
-    letter-spacing: 0%;
     color: var(--dark);
 }
 
@@ -415,16 +405,22 @@ h3 {
 
 .ikea-effect__columns {
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 30px;
 }
 
 .ikea-effect__description {
     margin-top: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
 }
 
 /* Преждевременная оптимизация */
+.premature-optimization {
+    margin-top: 5px;
+}
+
 
 .premature-optimization__row {
     display: flex;
@@ -461,8 +457,7 @@ h3 {
     font-family: "Neucha";
     font-weight: 400;
     font-size: 34px;
-    line-height: 1.2;
-    letter-spacing: 0%;;
+    line-height: 40px;
     color: var(--color-white);
 }
 
@@ -494,6 +489,7 @@ h3 {
 
 .premature-optimization__columns {
     display: flex;
+    align-items: flex-start;
     gap: 30px
 }
 
@@ -503,13 +499,15 @@ h3 {
 
 /* Искажение новизны */
 
+.distortion-of-novelty {
+    margin-top: -5px;
+}
 
 
 .distortion-of-novelty__row {
     display: flex;
     gap: 30px;
-    
-    
+     
 }
 
 .distortion-of-novelty__image img {
@@ -521,7 +519,7 @@ h3 {
 .distortion-of-novelty__info {
     display: flex;
     flex-direction: column;
-    gap: 30px
+    gap: 30px;
 }
 
 
@@ -542,8 +540,8 @@ h3 {
     font-family: "Neucha", cursive;
     font-weight: 400;
     font-size: 34px;
-    line-height: 1.2;
-    
+    line-height: 40px;
+   
     color: var(--dark);
 }
 
@@ -586,6 +584,10 @@ h3 {
 }
 
 /*Гиперболическое обесценивание*/
+.hyperbolic-depreciation {
+    margin-top: -5px;
+}
+
 
 .hyperbolic-depreciation__row {
     display: flex;
@@ -624,7 +626,6 @@ h3 {
     font-weight: 400;
     font-size: 34px;
     line-height: 40px;
-    letter-spacing: 0%;;
     color: var(--color-white);
 }
 
@@ -639,7 +640,6 @@ h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-
     text-transform: uppercase;
     color: var(--brown);
     position: relative;
@@ -658,6 +658,7 @@ h3 {
 
 .hyperbolic-depreciation__columns {
     display: flex;
+    align-items: flex-start;
     gap: 30px
 }
 
@@ -669,9 +670,6 @@ h3 {
 
 /* Ошибка планирования */
 
-.errors-in-planning {
-    margin-top: -2px;
-}
 
 .errors-in-planning__row {
     display: flex;
@@ -688,7 +686,7 @@ h3 {
 .errors-in-planning__info {
     display: flex;
     flex-direction: column;
-    gap: 30px
+    gap: 30px;
 }
 
 .errors-in-planning__subtitle {
@@ -709,7 +707,7 @@ h3 {
     font-family: "Neucha", cursive;
     font-weight: 400;
     font-size: 34px;
-    line-height: 1.2;
+    line-height: 40px;
     letter-spacing: 0%;
     color: var(--dark);
 }
@@ -724,7 +722,6 @@ h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-
     text-transform: uppercase;
     color: var(--color-white);
     position: relative;
@@ -743,6 +740,7 @@ h3 {
 
 .errors-in-planning__columns {
     display: flex;
+    align-items: flex-start;
     gap: 30px
 }
 
@@ -871,3 +869,40 @@ h3 {
     vertical-align: top;
     align-items: stretch;
 }
+
+
+
+
+/* Стилизуем заголовок "Random Content" */
+/* Стили специально для вставленного динамического блока */
+#premature-optimization div[style*="margin-top: 30px"] h2 {
+    font-family: "Neucha", cursive !important;
+    font-size: 60px !important; /* Строго по ТЗ */
+    line-height: 1.2em !important; /* Строго по ТЗ */
+    color: var(--primary) !important;
+    margin-top: 0 !important;
+    margin-bottom: 24px !important;
+}
+
+#premature-optimization div[style*="margin-top: 30px"] p,
+#premature-optimization div[style*="margin-top: 30px"] li {
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.6em !important; /* Строго по ТЗ */
+    color: var(--color-white) !important;
+    margin-bottom: 16px !important;
+}
+
+/* Убираем отступ у последнего элемента, чтобы не "толкать" футер вниз */
+#premature-optimization div[style*="margin-top: 30px"] *:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Настройка маркеров списка */
+#premature-optimization div[style*="margin-top: 30px"] ul {
+    list-style: disc !important;
+    padding-left: 20px !important;
+    margin-bottom: 16px !important;
+}
+/* Убираем отступ у самого последнего элемента, чтобы не раздувать футер */
+
